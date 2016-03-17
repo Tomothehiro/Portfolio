@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300,500);
+
+html,body{
+	height:100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.container-fluid {
+	padding:0;
+}
+
+.top_menu {
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	width: 50%;
+	font-size: 1.2em;
+}
+
+.top_menu a{
+	padding: 3%;
+}
+
+.slide-wrapper {
+    position: relative
+}
+
+.carousel-caption {
+        text-align: left;
+    }
+
+.title_top {
+        width: 100%;
+	height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+.title_top_content {
+        width: 100%;
+        height: 30%;
+        background: transparent;
+        color: #fff;
+        margin-right:15px; /* width of .container gutter */
+    }
+
+.title_top_menu {
+        width: 100%;
+        height: 20%;
+	margin-top: -3%;
+}
+
+.title_top_menu a{
+	font-size: 1.2em;
+	padding: 1%;
+}
+
+.margin{
+	margin: 0 5%;
+}
+
+
+/* ------------------------Suchan main stats ----------------------- */
+
+.circliful { 
+    position: relative;  
+ } 
+ 
+ 
+ .circle-text, .circle-info, .circle-text-half, .circle-info-half { 
+    width: 100%; 
+    position: absolute; 
+    text-align: center; 
+    display: inline-block; 
+ } 
+ 
+
+#myStat, #myStat2, #myStat3, #myStat4 {
+	display: inline;
+}
+
+#body1 table{
+	margin:0 auto;
+	text-align:center justify;
+	table-layout:fixed;
+	width: 60%;
+	padding-bottom: 100px;
+}
+
+#body1 td{
+	vertical-align: top;
+	font-weight:lighter;
+	text-align: center;
+}

@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tomo's Portfolio</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.inview.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+  <img src="images/Top1.png" alt="..." class="img-responsive">
+  <div class="top_menu">
+    <img src="images/SatoLogo.png" alt="..." style="width:30px; margin-right: 4%; vertical-align:bottom;">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="title_top_menu text-center">
+	<a href="#">HOME</a>
+	<a href="#">ABOUT</a>
+	<a href="#">EDUCATION</a>
+	<a href="#">WORK</a>
+	<a href="#">PORTFOLIO</a>
+	<a href="#">CONTACT</a>
+    </div>
+  </div>
+<script>
+$(document).on('scroll', function(){
+        if ($('.title_top_menu')[0].offsetTop < $(document).scrollTop()){
+            $(".title_top_menu").css({position: "fixed", top:50});
+        }
+        else if ($('.title_top_menu')[0].offsetTop > $(document).scrollTop()){
+            $(".title_top_menu").css({position: "static", top:0});
+        }
+});
+</script>
+  <div class="row">
+    <p class="text-center" style="font-size:1.4em;">About</p>
+    <p style="border-top: 1px solid #6E6E6E; width:3%;  margin:0 auto;"></p>
+  </div>
+    <div class="row margin">
+      <div class="col-xs-4 about_col">
+	<img src="images/temp.png" alt="..." class ="img-responsive">
+	<p class="text-center" style="font-size:1.4em;">Colors</p>
+      </div>
+      <div class="col-xs-4 about_col">
+	<img src="images/temp.png" alt="..." class ="img-responsive">
+      </div>
+      <div class="col-xs-4 about_col">
+	<img src="images/temp.png" alt="..." class ="img-responsive">
+      </div>
+    </div>
+
+    <div class="slide-wrapper">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+	<ol class="carousel-indicators">
+	  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	</ol>
+  	<!-- Wrapper for slides -->
+  	<div class="carousel-inner" role="listbox">
+    	  <div class="item active">
+      	  <img src="images/Top.jpg" alt="...">
+      	    <div class="carousel-caption">
+            <h3>Caption 1</h3>
+    	    <p>Caption 2</p>
+      	    </div>
+    	  </div>
+    	  <div class="item">
+      	    <img src="images/Top.jpg" alt="...">
+      	    <div class="carousel-caption">
+            <h3>Caption 3</h3>
+    	    <p>Caption 4</p>
+          </div>
+	</div>
+	<div class="item">
+	  <img src="images/Top.jpg" alt="...">
+	  <div class="carousel-caption">
+	  <h3>Caption 5</h3>
+	  <p>Caption 6</p>
+	  </div>
+	</div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="title_top">
+      <div class="title_top_content">
+	<p class="text-center">Tomohiro Sato</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center" style="font-size:1.4em;">Education</p>
+  <p style="border-top: 1px solid #6E6E6E; width:3%;  margin:0 auto;">
+
+  <div class="row" id="education_stats">
+<script>
+(function(t){t.fn.circliful=function(i){var e=t.extend({startdegree:0,fgcolor:"#556b2f",bgcolor:"#eee",fill:!1,width:15,dimension:200,fontsize:15,percent:50,animationstep:1,iconsize:"20px",iconcolor:"#999",border:"default",complete:null,bordersize:10},i);return this.each(function(){function a(i,e,a){t("<span></span>").appendTo(i).addClass(e).text(s).prepend(l).css({"line-height":a+"px","font-size":h.fontsize+"px"})}function n(i,e){t("<span></span>").appendTo(i).addClass("circle-info-half").css("line-height",h.dimension*e+"px").text(r)}function o(i){t.each(c,function(a,n){h[n]=void 0!=i.data(n)?i.data(n):t(e).attr(n),"fill"==n&&void 0!=i.data("fill")&&(m=!0)})}function d(e){u.clearRect(0,0,g.width,g.height),u.beginPath(),u.arc(x,b,w,z,y,!1),u.lineWidth=h.width+1,u.strokeStyle=h.bgcolor,u.stroke(),m&&(u.fillStyle=h.fill,u.fill()),u.beginPath(),u.arc(x,b,w,-k+T,C*e-k+T,!1),"outline"==h.border?u.lineWidth=h.width+13:"inline"==h.border&&(u.lineWidth=h.width-13),u.strokeStyle=h.fgcolor,u.stroke(),p>M&&(M+=I,requestAnimationFrame(function(){d(Math.min(M,p)/100)},f)),M==p&&S&&i!==void 0&&t.isFunction(i.complete)&&(i.complete(),S=!1)}var s,r,c=["fgcolor","bgcolor","fill","width","dimension","fontsize","animationstep","endPercent","icon","iconcolor","iconsize","border","startdegree","bordersize"],h={},l="",p=0,f=t(this),m=!1;if(f.addClass("circliful"),o(f),void 0!=f.data("text")&&(s=f.data("text"),void 0!=f.data("icon")&&(l=t("<i></i>").addClass("fa "+t(this).data("icon")).css({color:h.iconcolor,"font-size":h.iconsize})),void 0!=f.data("type")?(F=t(this).data("type"),"half"==F?a(f,"circle-text-half",h.dimension/1.45):a(f,"circle-text",h.dimension)):a(f,"circle-text",h.dimension)),void 0!=t(this).data("total")&&void 0!=t(this).data("part")){var v=t(this).data("total")/100;percent=(t(this).data("part")/v/100).toFixed(3),p=(t(this).data("part")/v).toFixed(3)}else void 0!=t(this).data("percent")?(percent=t(this).data("percent")/100,p=t(this).data("percent")):percent=e.percent/100;void 0!=t(this).data("info")&&(r=t(this).data("info"),void 0!=t(this).data("type")?(F=t(this).data("type"),"half"==F?n(f,.9):n(f,1.25)):n(f,1.25)),t(this).width(h.dimension+"px");var g=t("<canvas></canvas>").attr({width:h.dimension,height:h.dimension}).appendTo(t(this)).get(0),u=g.getContext("2d");t(g).parent();var x=g.width/2,b=g.height/2,P=360*h.percent;P*(Math.PI/180);var w=g.width/2.5,y=2.3*Math.PI,z=0,M=0===h.animationstep?p:0,I=Math.max(h.animationstep,0),C=2*Math.PI,k=Math.PI/2,F="",S=!0,T=h.startdegree/180*Math.PI;void 0!=t(this).data("type")&&(F=t(this).data("type"),"half"==F&&(y=2*Math.PI,z=3.13,C=Math.PI,k=Math.PI/.996)),d(M/100)})}})(jQuery);
+</script>
+
+<table>
+<tr style="height: 150px;">
+<td> <div id="myStat" data-dimension="190" data-text="64.4%" data-info="" data-width="1" data-fontsize="30" data-percent="64.4" data-fgcolor="#2980b9" data-bgcolor="#eee" ></div> </td>
+<td><div id="myStat2" data-dimension="190" data-text="43.05%" data-info="" data-width="1" data-fontsize="30" data-percent="43.05" data-fgcolor="#2980b9" data-bgcolor="#eee"></div> </td>
+<td> <div id="myStat3" data-dimension="190" data-text="82.3%" data-info="" data-width="1" data-fontsize="30" data-percent="82.3" data-fgcolor="#2980b9" data-bgcolor="#eee"></div> </td>
+<td> <div id="myStat4" data-dimension="190" data-text="96.7%" data-info="" data-width="1" data-fontsize="30" data-percent="96.7" data-fgcolor="#2980b9" data-bgcolor="#eee"></div></td>
+</tr>
+<tr>
+<td> GROWTH IN<br>BRAND VALUE </td>
+<td> AVG. CLIENT<br>REVENUE<br>INCREASE </td>
+<td> CLIENTS<br>WHO WENT ON<br>TO GET FUNDING </td>
+<td> REPEAT<br>CUSTOMERS </td></tr>
+</table>
+</div>
+<script>
+	$('#myStat').hide();
+	$('#myStat2').hide();
+	$('#myStat3').hide();
+	$('#myStat4').hide();
+    $('#education_stats').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+	if (isInView) {
+            if (visiblePartX == 'both' && visiblePartY == 'top'){
+		$('#myStat').fadeIn(3000).circliful();
+		$('#myStat2').fadeIn(3000).circliful();
+    		$('#myStat3').fadeIn(3000).circliful();
+    		$('#myStat4').fadeIn(3000).circliful();
+		$('#education_stats').off('inview');            
+		}
+        }
+    });
+</script>
+
+
+</div>
+</body>
+</html>
