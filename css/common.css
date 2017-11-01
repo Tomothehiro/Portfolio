@@ -53,13 +53,37 @@ a:hover {
     cursor: pointer;
 }
 
-.top_menu_right {
-    position: absolute;
-    right: 8%;
-    top: 9%;
-    width: 50%;
-    text-align: right;
-    font-size: 1.2em;
+@media screen and (max-width: 650px) and (min-width: 350px) {
+    .top_menu_right {
+        position: absolute;
+	    right: 5%;
+	    top: 3%;
+	    width: 80%;
+	    text-align: right;
+	    font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 650px) {
+    .top_menu_right {
+        position: absolute;
+	    right: 5%;
+	    top: 4%;
+	    width: 80%;
+	    text-align: right;
+	    font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .top_menu_right {
+	    position: absolute;
+	    right: 8%;
+	    top: 9%;
+	    width: 50%;
+	    text-align: right;
+	    font-size: 1.2em;
+	}
 }
 
 .top_menu_right a {
@@ -110,7 +134,12 @@ a:hover {
 }
 
 .img-work-overwrite {
-    width: 230px;
+    width: 100%;
+}
+
+.img-small {
+	width: 20px;
+	display: inline;
 }
 
 
