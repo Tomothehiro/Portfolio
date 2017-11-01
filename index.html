@@ -1,176 +1,138 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Sample</title>
-<!-- BootstrapのCSS読み込み -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- jQuery読み込み -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- BootstrapのJS読み込み -->
-<script src="js/bootstrap.min.js"></script>
-<style>
-#wrap{
-    height:600px;
-    width:100%;
-    background:#DADADA;
-}
-
-#wrap2{
-    height:600px;
-    width:100%;
-    background:green;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sato's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+    <script src="js/modernizr.custom.js"></script>
 </head>
+
 <body>
-<h1>Hello, world!</h1>
-<header style="background-color:gray">Header</header>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-2 col-md-2" style="background-color:red;">Red</div>
-    <div class="col-lg-8 col-md-2" style="background-color:blue;">Blue</div>
-    <div class="col-lg-2 col-md-2" style="background-color:yellow;">Yellow</div>
-  </div>
-</div>
-<footer style="background-color:gray">Footer</footer>
-<div class="container">
-<div class="table-responsive">
-<table class="table  table-striped">
-<thead>
-<tr>
-<th>#</th>
-<th>名前</th>
-<th>メールアドレス</th>
-<th>電話番号</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">1</th>
-<td>煌木 太郎</td>
-<td>taro.kirameki@example.com</td>
-<td>09011112222</td>
-</tr>
-<tr>
-<th scope="row">2</th>
-<td>煌木 次郎</td>
-<td>jiro.kirameki@example.com</td>
-<td>09033334444</td>
-</tr>
-<tr>
-<th scope="row">3</th>
-<td>煌木 花子</td>
-<td>hanako.kirameki@example.com</td>
-<td>09055556666</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-link">Link</button>
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-default btn-lg">Large button</button>
-<button type="button" class="btn btn-primary">Default button</button>
-<button type="button" class="btn btn-default">Default button</button>
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-<button type="button" class="btn btn-default btn-sm">Small button</button>
-<button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-<button type="button" class="btn btn-default btn-xs">Extra small button</button>
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
-</p>
-
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form><br>
-<form class="form-inline">
-  <div class="form-group">
-    <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
-  <button type="submit" class="btn btn-default">Send invitation</button>
-</form><br>
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputPassword3">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Sign in</button>
-</form><br>
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-    <div class="input-group">
-      <div class="input-group-addon">$</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-      <div class="input-group-addon">.00</div>
+    <nav id="bt-menu" class="bt-menu">
+        <a href="#" class="bt-menu-trigger"><img src="images/SatoLogo.png" alt="Sato Logo" style="width:50px;"></a>
+        <ul>
+            <li><a href="#home" class="glyphicon glyphicon-home" title="Home">Home</a></li>
+            <li><a href="#about" class="glyphicon glyphicon-user" title="About">About</a></li>
+            <li><a href="#work" class="glyphicon glyphicon-briefcase" title="Work">Work</a></li>
+            <li><a href="#contact" class="glyphicon glyphicon-send" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container-fluid" id="home">
+        <img src="images/Top.png" alt="Top Image" class="img-responsive">
+        <div class="top_menu_right">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#contact">CONTACT</a>
+            <a class="en" onclick="return showLanguage('jp')"><b>EN</b>/JA</a>
+            <a class="jp" onclick="return showLanguage('en')">EN/<b>JA</b></a>
+        </div>
     </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Transfer cash</button>
-</form>
-<div id="wrap">
-    <a href="" id="clickme">Click Me</a>
-</div>
-
-<div id="wrap2">
-    <a href="" id="clickme2">Go to top</a>
-</div>
-<script>
-$("#clickme").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#wrap2").offset().top
-    }, 2000);
-    return false;
-});
-
-$("#clickme2").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#wrap").offset().top
-    }, 2000);
-     return false;
-});
-</script>
+    <script>
+    $('a').click(function() {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        return false;
+    });
+    </script>
+    <div class="container">
+        <div class="row margin" id="about">
+            <p class="text-center title_size">About</p>
+            <p class="line"></p>
+            <div class="col-sm-1 hidden-xs"></div>
+            <div class="col-sm-5 text-center">
+                <img src="images/TomoPic.jpg" alt="Tomo Pic" class="img-circle img-responsive img-sato-overwrite">
+                <p style="margin-top:5%;">
+                    里 智博/ Tomohiro Sato
+                    <br/> Software Developer/ Born Dec 1991
+                </p>
+            </div>
+            <div class="col-sm-5">
+                <p class="en" style="margin-top:10%;">
+                    As an undergrad, I majored in Biochemistry. My master's degree research theme was on Glioblastoma (Brain tumour).
+                    <br/> Astonished by the enjoyment of programming, I decided my carrier as a application engineer.
+                    <br/>
+                </p>
+                <p class="jp" style="margin-top:10%;">
+                    大学で生物化学を勉強、大学院で脳腫瘍の研究をしました。
+                    <br/> 現職に就きプログラミングに触れたのをきっかけに
+                    <br/> アプリケーションエンジニアの道を歩むことを決めました。
+                </p>
+                <table class="table" style="margin-top:10%;">
+                    <tr>
+                        <td>2006.9. - 2010.6.</td>
+                        <td class="en">Sammamish High School</td>
+                        <td class="jp">サマミッシュ高校</td>
+                    </tr>
+                    <tr>
+                        <td>2010.9. - 2012.6.</td>
+                        <td class="en">University of Washington Bachelor of Science</td>
+                        <td class="jp">ワシントン大学 Bachelor of Science</td>
+                    </tr>
+                    <tr>
+                        <td>2013.4. - 2015.3.</td>
+                        <td class="en">University of Tokyo Master of Science</td>
+                        <td class="jp">東京大学 大学院 Master of Science</td>
+                    </tr>
+                    <tr>
+                        <td>2015.4. - 2016.4.</td>
+                        <td class="en">Tata Consultancy Services Japan, Ltd.</td>
+                        <td class="jp">日本タタ・コンサルタンシー・サービシズ株式会社</td>
+                    </tr>
+                    <tr>
+                        <td>2016.4. - 2017.8.</td>
+                        <td class="en">Works Applications Co., Ltd.</td>
+                        <td class="jp">株式会社 ワークスアプリケーションズ</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-1 hidden-xs"></div>
+        </div>
+        <div class="row text-center margin" id="work">
+            <p class="text-center title_size">Work</p>
+            <p class="line"></p>
+            <div class="col-md-3 col-xs-6">
+                <a href="https://rsvp.tomohiro-sato.com" class="work_img">
+                    <img src="images/rsvp.png" alt="Portfolio" class ="img-work-overwrite">
+                </a>
+                <p class="caption">RSVP MEAN app</p>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="#" class="work_img">
+                    <img src="images/portfolio.png" alt="Portfolio" class ="img-work-overwrite">
+                </a>
+                <p class="caption">Sato's Portfolio</p>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="http://www.cell.com/cell-reports/abstract/S2211-1247(14)00763-3" class="work_img">
+                  <img src="images/glioblastoma.png" alt="Glioblastoma" class ="img-work-overwrite">
+                </a>
+                <p class="caption">5-Hydroxymethylcytosine Plays a Critical Role in Glioblastomagenesis</p>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <span class="work_img"><img src="images/construction.png" alt="Construction" class ="img-work-overwrite"></span>
+                <p class="caption">Under construction</p>
+            </div>
+        </div>
+        <div class="row" id="contact">
+            <hr>
+            <p class="text-center"> If you wish to contact me or give me feedback
+                <br> you can reach me at <a href="tomonouchi@hotmail.com"><u>tomonouchi@hotmail.com</u></a></p>
+            <br>
+            <p class="text-center font_light">Handcrafted in Japan, code & design by Tomohiro Sato</p>
+        </div>
+    </div>
 </body>
+<script src="js/classie.js"></script>
+<script src="js/borderMenu.js"></script>
+
 </html>

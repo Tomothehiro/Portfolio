@@ -1,89 +1,124 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300,500);
 
-html,body{
-	height:100%;
-	font-family: 'Roboto', sans-serif;
+
+/*--------------------
+       COMMON
+--------------------*/
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-a{
-	text-decoration: none;
-	color:black;
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
-a:hover{text-decoration: none;}
-
-.title_size{font-size:1.4em;}
-
-/* ------------------------Common----------------------- */
-
-.container-fluid{padding:0;}
-
-.line{
-	border-top: 1px solid #6E6E6E;
-	width:3%;
-	margin:0 auto 3% auto;
+a:hover {
+    text-decoration: none;
 }
 
-.margin{
-	padding-top:7%;
+.title_size {
+    font-size: 1.4em;
 }
 
-/* ------------------------Home Top----------------------- */
-
-.top_menu_left{
-	position: fixed;
-	left: 5%;
-	top: 5%;
-	width: 20%;
-	cursor: pointer;
-}
-.top_menu_right{
-	position: absolute;
-	right: 8%;
-	top: 9%;
-	width: 50%;
-	text-align:right;
-	font-size: 1.2em;
+.container-fluid {
+    padding: 0;
 }
 
-.top_menu_right a{padding: 3%;}
-
-.img-sato-overwrite{
-	margin: 0 auto;
-	max-width: 250px;
+.line {
+    border-top: 1px solid #6E6E6E;
+    width: 3%;
+    margin: 0 auto 3% auto;
 }
 
-/* ------------------------------Work----------------------------- */
+.margin {
+    padding-top: 7%;
+}
+
+
+
+/*--------------------
+       Home Top
+--------------------*/
+
+.top_menu_left {
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    width: 20%;
+    cursor: pointer;
+}
+
+.top_menu_right {
+    position: absolute;
+    right: 8%;
+    top: 9%;
+    width: 50%;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.top_menu_right a {
+    padding: 3%;
+}
+
+
+/*--------------------
+       	About
+--------------------*/
+
+.img-sato-overwrite {
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.table td:first-child {
+    min-width: 122px;
+}
+
+
+
+/*--------------------
+       	 Work
+--------------------*/
+
 .caption {
-	position:relative;
-	height:40px;
-	visibility:hidden;
-	bottom: 10em;
+    height: 40px;
+    visibility: hidden;
+    bottom: 10em;
 }
 
-.work_img img{
-	-webkit-filter: blur(0);
-	filter: blur(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+.work_img img {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .work_img img:hover {
-	-webkit-filter: blur(3px);
-	filter: blur(3px);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
 }
 
-.work_img:hover + .caption, .caption:hover {
-	visibility:visible;
+.work_img:hover+.caption,
+.caption:hover {
+    visibility: visible;
 }
 
-.img-work-overwrite{
-	width: 230px;
+.img-work-overwrite {
+    width: 230px;
 }
 
-/* ------------------------------Work----------------------------- */
 
-.font_light{
-	font-weight:lighter;
-	color:#95A5A6;
+/*--------------------
+       Contact
+--------------------*/
+
+.font_light {
+    font-weight: lighter;
+    color: #95A5A6;
 }
